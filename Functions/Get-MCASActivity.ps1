@@ -58,7 +58,7 @@ function Get-MCASActivity {
 
         # Specifies the maximum number of results to retrieve when listing items matching the specified filter criteria.
         [Parameter(ParameterSetName='List', Mandatory=$false)]
-        [ValidateRange(1,100000)]
+        [ValidateRange(1,10000000)]
         [int]$ResultSetSize = 100,
 
         # Specifies the number of records, from the beginning of the result set, to skip.
